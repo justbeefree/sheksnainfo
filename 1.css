@@ -21,10 +21,11 @@ span.grey{display:block; margin-left: -14px; padding: 6px 14px;}
 #banner-left-two{text-align:center;margin-bottom:20px;margin-top:20px;}
 
 /* HEADER */
-#header {position: relative; margin: 4px 2px; height:80px; padding-top:12px;}
+#header {position: relative; margin: 4px 2px; height:284px; padding-top:12px;}
 
 #header-title{height:40px;font-size:1.8em; margin-left:39px; font-weight: bold;}
 #header-title a{text-decoration:none;}
+#header-gerb {width: 147px;height: 185px;float: left;}
 
 /* SEARCH */
 #left-search {margin-bottom: 15px; margin-top: -5px; padding-left:15px}
