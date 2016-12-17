@@ -14,19 +14,13 @@ IncludeTemplateLangFile(__FILE__);
 <body>
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>
 	<div id="page-wrapper">
-	<?if(CModule::IncludeModule('advertising')):?>
-	<?$APPLICATION->IncludeComponent("bitrix:advertising.banner", "top", Array(
-	"TYPE" => "TOP",
-	"NOINDEX" => "N",
-	"CACHE_TYPE" => "A",
-	"CACHE_TIME" => "0",
-	),
-	false
-	);?>
-	<?endif;?>
+
 	<div id="header">
+	<div id="header-gerb">	
+		<a href="/"><img src="/bitrix/images/sheksna.gif" width= "147px" height="185px"></a>
+		</div>
 	<div id="header-title"><a href="<?=SITE_DIR?>"><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/infoportal_name.php"), false);?></a></div>
-	<div id="header-auth">
+	<!--<div id="header-auth">
 		<?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "info", array(
 			"REGISTER_URL" => SITE_DIR."login/",
 			"PROFILE_URL" => SITE_DIR."personal/profile/",
@@ -35,6 +29,7 @@ IncludeTemplateLangFile(__FILE__);
 			false,
 			Array()
 		);?>
+	</div>-->
 	</div>
 	<div id="main-menu">
 	<?$APPLICATION->IncludeComponent("bitrix:menu", "horizontal_multilevel", array(
@@ -52,7 +47,6 @@ IncludeTemplateLangFile(__FILE__);
 	),
 	false
 	);?>
-	</div>
 	</div>
 	<div id="page-body">
 	<table width="100%" cellspacing="0" cellpadding="0" >
